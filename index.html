@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        #inp{
+            background-color: #f2f2f2;
+            height: 50px;
+            padding: 10px 50px;
+        }
+        #city{
+            width: 20%;
+            padding: 5px 10px;
+        }
+        #search{
+            background-color: #616163;
+            color: white;
+            padding: 5px 10px;
+        }
+        .mapouter{
+            position:relative;
+            text-align:right;
+            height:500px;
+            width:600px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+        }
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:300px;
+            width:600px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #box{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inp">
+        <input type="text" id="city" placeholder="Search City">
+        <input onclick="getweather()" type="submit" value="Search" id="search">
+    </div>
+
+    <div id="box">
+    <div id="cont"></div>
+
+    <div class="mapouter"><div class="gmap_canvas">
+        <iframe width="600" height="300" id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">divi discount</a><br>
+        <a href="https://www.embedgooglemap.net">google maps for website</a></div></div>
+
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
